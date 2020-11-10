@@ -1,0 +1,35 @@
+10/7/20 - Computer Memory Basics
+
+Arrays in Memory
+    1) each element in the array takes up the same number of slots
+    2) all of the elements are right next to each other (contiguous)
+
+    So, if each element takes up 2 slots, arr[3] would do 2 * 3 and go to the 6th slot
+    If each element took up 1 slot, arr[3] would go to the third slot
+    If each element takes up 51 slots, arr[3] would go to 3 * 51, so the 153rd slot
+
+    so runtimes of:
+        arr.pop() -- O(1)
+        arr.pop(middleValue) -- O(n)
+            -- bc all values must be contiguous, so values must cascade into different spots
+
+    strings are arrays - each character is stored in a different slots
+
+Character Encoding
+
+    ASCII Tables = how we convert English letters and characters to binary, decimal, hexadecimal, html code, etc
+
+    Unicode = same concept as ASCII but more complicated
+
+    Each language has built-in methods to turn things into ASCII, Unicode, or something similar
+        -- python = ord()
+        -- JS = charCodeAt()
+    
+    Sometimes we need to convert between encoding systems or encode pdfs etc
+
+    ASCII was the original character encoding systems
+        -- ASCII is very limited though
+        -- It works for English, but not for other languages/alphabets
+        -- hence Unicode
+
+    
